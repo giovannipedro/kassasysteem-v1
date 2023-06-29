@@ -1,0 +1,249 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+.tafels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+   background-color: aquamarine;
+   color: #ffff;
+    margin: 10px;
+    height: 15%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.table-container{
+    height: 100vh;
+    
+}
+
+.tafels a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+#chat-container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+  
+.user-message {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+}
+.text-center{
+text-align: center;
+}
+#user-input{
+  padding: 10px;
+  border-radius: 10px;
+  width: 93%;
+
+}
+  
+.bot-message {
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+}
+  
+#chat-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  
+}
+button
+{
+  border-radius: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background-color: #c8161d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  
+}
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c8161d;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: ease-in 1s;
+}
+.close-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.secondary-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+.chat-button::before{
+  content: url('./union-1\ \(1\).svg');
+  vertical-align: middle;
+  font-size:.9em;
+  padding-right: 10px;
+}
+.chat-button.clicked::before{
+  content: url('./union-1\ \(2\).svg');
+  vertical-align: middle;
+  font-size:.9em;
+  padding-right: 10px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: none ;
+}
+
+.popup-content {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered-table {
+  margin: 0 auto;
+  border-collapse: collapse; /* Combineer de randen van de cellen */
+}
+
+.centered-table td,
+.centered-table th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.centered-table tr:first-child td,
+.centered-table tr:nth-child(3) td {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+
+.centered-table tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Achtergrondkleur voor even rijen */
+}
+
+.centered-table th {
+  background-color: #e5e5e5; /* Achtergrondkleur voor kopcellen */
+}
+
+.centered-table th,
+.centered-table td {
+  border: 1px solid #ccc; /* Randstijl voor de cellen */
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.btn-div{
+  display: flex;
+  justify-content: start;
+}
+
+@media screen and (max-width: 480px) {  
+    #chat-container {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 80vw;
+        display: none;
+        background-color: white;
+        border: 1px solid #808080;
+        
+    }
+
+    .choices-ctr{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #toevoegen,
+    #afrekenen {
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+    }
+
+    #toevoegen{
+        background-color: #ffca40;
+    }
+    #afrekenen{
+        background-color: #c8161d;
+    }
+    .container-fluid{
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+    #toevoegen a,
+    #afrekenen a{
+       text-decoration: none;
+       color: white;
+    }
+
+    .product-items{
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+    }
+
+
+}
+
+
